@@ -1,7 +1,7 @@
 
 ![screencapture-localhost-8080-2020-04-04-18_39_43](https://user-images.githubusercontent.com/38250310/78449933-0bed3d80-76a5-11ea-812d-3818159efd7e.png)
 
-This App is created using HTML, [SASS](https://sass-lang.com/documentation) and Javascript. A Recipe find
+Cooking recipe guide created with HTML, [SASS](https://sass-lang.com/documentation) and [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). p.s (only works with pizza query).
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
