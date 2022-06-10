@@ -5,13 +5,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   //entry points
-  entry: ['babel-polyfill', './src/js/index.js'],
+  entry: ["@babel/polyfill", './src/js/index.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/bundle.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    // contentBase: path.join(__dirname, 'dist'),
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
     port: 8000,
   },
   plugins: [
@@ -24,10 +27,16 @@ module.exports = {
     rules: [
       {
         // this test here will basically look for all of the files and test if they end in .js.
-        test: /\.js$/,
+        // test: /\.js$/,
+        test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env', { targets: "defaults" }]
+            ]
+          }
         },
       },
     ],

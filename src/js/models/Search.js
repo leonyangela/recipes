@@ -19,3 +19,4 @@ export default class Search {
 
 // similiar to food2fork api
 // https://api.spoonacular.com/recipes/search
+// https://spoonacular.com/food-api/docs
